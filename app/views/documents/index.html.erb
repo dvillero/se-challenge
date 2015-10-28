@@ -1,0 +1,12 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Import Documents for Member</h1>
+
+<%= form_tag import_documents_path, multipart: true do %>
+  <%= file_field_tag :file %>
+  <%= submit_tag "Import" %>
+<% end %>
+
+<%= link_to 'See Members Table ', members_path %>
+
+
